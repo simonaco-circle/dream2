@@ -23,3 +23,6 @@ jobs:
           key: dependency-cache-{{checksum "package.json"}}
           paths:
             - node_modules
+      -deploy:
+          command: |
+            ./scripts/publish.sh;
