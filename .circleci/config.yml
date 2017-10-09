@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - restore-cache:
-        key: dependency-cache-{{checksum "package.json"}}
+          key: dependency-cache-{{checksum "package.json"}}
       - run:
           name: install
           command: yarn install
